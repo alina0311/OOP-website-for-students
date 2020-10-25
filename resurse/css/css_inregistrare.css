@@ -1,0 +1,72 @@
+body{
+	background-color:rgb(255, 160, 122);
+}
+html{
+	font-size:17px;
+}
+footer{
+	margin-top:0rem;
+}
+main{
+	margin-top:-8rem;
+}
+main form{
+	margin-top:-10rem;
+}
+button{
+	
+}
+main form{
+	color:black;
+	margin-left:14rem;
+	font-family: 'Jost', sans-serif;
+	align-items: center;
+	background-color: rgb(250, 240, 230);
+	width:36rem;
+	border-radius:2rem;
+	margin-left: 16rem;
+	margin-top:12rem;
+	height:47rem;
+	padding:1rem;
+	padding-left:5rem;
+	font-family: 'Jost', sans-serif;
+}
+main form label {
+  margin: 5px 10px 5px 0;
+  font-weight: bold;
+}
+main form input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+main form p{
+	font-weight: bold;
+}
+
+#inregistrare{
+	margin-left:8rem;
+}
+#indecis{
+	font-size:1rem;
+	font-family: 'Jost', sans-serif;
+	vertical-align: middle;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin-top:-9.8rem;
+	margin-left:57%;
+	
+}
+#reset, #inregistrare {
+	font-size:1rem;
+	font-family: 'Jost', sans-serif;
+}
+#inregistrare:hover{
+	background-color:rgb(102, 205, 170);
+}
+#reset:hover{
+	background-color:rgb(253, 245, 230);
+}

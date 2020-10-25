@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+	<head>
+		<title>Json</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Alina Dorneanu">
+		<meta name="description" content="pagina de documentatie pentru o platforma de informatica">
+		<meta name="keywords" content="documentatie, youtube, programare, platforma, elevi">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="../imagini/favicon.ico" sizes="16x16"/>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/css/afisareJson.css">
+		<script src="js/ejs.min.js"></script>
+		<script src="js/script.js"></script>
+		
+	</head>
+	<body>
+	<%- include('../fragmente/header')  %>	
+	<main>
+		<div>
+		<div id="meniu_apl">
+			<button id="sorteaza_nota"> Sorteaza dupa nota </button>
+			<button id="filtreaza"> Filtreaza dupa clasa </button>
+			<button id="sterge"> Sterge elevii cu pasiunea</button><button> <input type="text" id="pas"></input></button>
+			<button id="calculeaza"> Calculeaza media notelor </button>
+			<button id="reseteaza"> Reseteaza  </button>
+			<button id="schimba_culoare">Schimba culoarea butoanelor</button><br>
+			<button id="filtreaza_input"> Filtreaza dupa culoarea preferata </button>
+			<button id ="alege">
+			Alege culoarea dupa care vrei sa filtrezi:
+				<input type="radio" id="rosu" name="culoare" value="rosu">
+				<label for="rosu">rosu</label>
+				<input type="radio" id="galben" name="culoare" value="galben">
+				<label for="galben">galben</label>
+				<input type="radio" id="verde" name="culoare" value="verde">
+				<label for="verde">verde</label>
+				<input type="radio" id="albastru" name="culoare" value="albastru">
+				<label for="albastru">albastru</label>
+			</button>
+			
+		</div>
+		<!-- aici se va afisa continutul JSON-ului cu formatul din template-ul definit in script -->
+		<div class="afis" id="afisTemplate">
+        </div>
+		
+	</main>
+	<%- include('../fragmente/footer')  %>
+	<script src="js/nrcuv.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Acasă</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Alina Dorneanu">
+		<meta name="keywords" content="POO, OOP, programare, platformă, C++, obiect">
+		<meta name="description" content="O pagina destinata elevilor despre programarea orientata pe obiecte">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="../imagini/favicon.ico" sizes="16x16"/>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/css/css_inregistrare.css">
+		<script src="js/nrcuv.js"></script>
+		<script src="js/utilizIndecis.js"></script>
+	</head>
+	<body>
+		<%- include('../fragmente/header')  %>
+		<main>
+			<form action="/inreg" method="post">
+				<label for="user">Username:</label>
+				<input type="text" id="user" name="username"><br>
+				<label for="nume">Nume:</label>
+				<input type="text" id="nume" name="nume"><br>
+				<label for="prenume">Prenume:</label>
+				<input type="text" id="prenume" name="prenume"><br>
+				<label for="scoala">Unitatea de învățământ:</label>
+				<input type="text" id="scoala" name="scoala"><br>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email"><br>
+				<label for="parola">Parola:</label>
+				<input type="password" id="parola" name="parola"><br>
+				<label for="sex">Sex:</label><br>
+				<input type="radio" id="masculin" name="sex" value="masculin">
+				<label for="masculin">Masculin</label><br>
+				<input type="radio" id="feminin" name="sex" value="feminin">
+				<label for="feminin">Feminin</label><br><br>
+				<p>Ce limbaje de programare cunoști?<br>
+				<label>
+					<input type="checkbox" name="limbaje" value="C/C++">C/C++ 
+				</label><br>
+				<label>
+					<input type="checkbox" name="limbaje" value="HTML">HTML 
+				</label><br>
+				<label>
+					<input type="checkbox" name="limbaje" value="CSS">CSS 
+				</label><br>
+				<label>
+					<input type="checkbox" name="limbaje" value="JavaScript">JavaScript 
+				</label><br>
+				<label>
+					<input type="checkbox" name="limbaje" value="Python">Python 
+				</label><br>
+				</p><br><br>
+				<label for="info">Pe o scară de la 1 la 5, cât de mult îți place informatica?</label><br>
+				<input type="range" id="info" name="info" min="0" max="5">
+				<br><br>
+				<input type="submit" value="Înregistrare" id="inregistrare">
+				<input type="reset" id="reset">
+			</form> 
+			<button id="indecis">Indecis?</button>
+		</main>
+		<%- include('../fragmente/footer')  %>
+		<script src="js/nrcuv.js"></script>
+	</body>
+</html>

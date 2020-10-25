@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto|Permanent+Marker|Vanela+Round|Sen|Exo+2|Nunito+Sans|Ropa+Sans|Raleway|Pacifico|Anton&display=swap');
+html{
+	font-size:17px;
+}
+body{
+	width:100%;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),  url(../imagini/alb.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: 50% 80%;
+	background-repeat:repeat-Y;
+	margin-left:0px;
+	margin-right:0px;
+}
+footer{
+	margin-top:2rem;
+	margin-left:-0.5rem;
+	width:100%;
+}
+header{
+	width:100%;
+}
+main{
+	margin-top:4rem;
+}
+a{text-decoration:none;color:black;}
+main ul{list-style:none;}
+main div{
+	width:26rem;
+	height:15rem;
+	margin-left:8%;
+	margin-top:10%;
+	border-radius:1rem;
+	opacity:0.8;
+	background-color:rgb(204, 238, 255);
+	text-align:left;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size:1.4rem;
+	position:absolute;
+	line-height:180%;
+
+}
+iframe{
+	margin-left:45%;
+	margin-top:5%;
+	border-radius:1rem;
+	
+}
+#listacontact{
+	margin-top:2.3rem;
+}
+main div span{
+font-weight:bold;}
+@media screen and (min-width:400px) and (max-width:700px){
+	html, body, footer{
+		width:100vw;
+		margin-left:0vw;
+	}
+	main div{
+		margin-left:0vw;
+		margin-top:5vw;
+		width:100vw;
+	}
+	main iframe{
+		margin-left:5vw;
+		margin-top:50vw;
+	}
+	#banda, #rights{
+		width:100vw;
+		margin-left:0vw;
+	}
+	
+}
+@media screen and (max-width: 400px){
+	footer, #banda, #rights, html, body{
+		width:100vw;
+	}
+	#banda, #rights{
+		margin-left:2vw;
+	}
+	main div{
+		width:80vw;
+		padding:2vw;
+		margin-left:8vw;
+		height:80vw;
+		margin-top:40vw;
+	}
+	#listacontact{
+		font-size:6vw;
+		margin-left:0;
+	}
+	iframe{
+		width:90vw;
+		margin-top:140vw;
+		margin-left:5vw;
+	}
+}

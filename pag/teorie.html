@@ -1,0 +1,185 @@
+<!Doctype HTML>
+<html lang="ro">
+	<head>
+		<title>Teorie</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Alina Dorneanu">
+		<meta name="description" content="pagina de teorie legata de programarea orientata obiect">
+		<meta name="keywords" content="C++, programare, obiect, clasă, obiect, moștenire, proprietăți, metode">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="../imagini/favicon.ico" sizes="16x16"/>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="all.css">
+		<link rel="stylesheet" type="text/css" href="css_invata.css">
+	</head>
+	<body>
+		<header>
+		<nav class="row">
+			<ul class="main-nav">
+				<li class="dropdown">
+					<a href="index.html">ACASĂ</a>
+					<ul class="dropdown-content"> 
+						<li><a href="index.html">DESPRE</a></li>
+						<li><a href="index.html">RECOMANDĂRI</a></li>
+					</ul>
+				</li>
+				<li class="dropdown active">
+					<a href="teorie.html">ÎNVAȚĂ</a>
+					<ul class="dropdown-content"> 
+						<li><a href="teorie.html">TEORIE</a></li>
+						<li><a href="exercitii.html">EXERCIȚII</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html"> CONTACT </a></li>
+				<li><a href="news.html"> ȘTIRI </a></li>
+            </ul>				
+		</nav>
+		</header>
+		<main>
+		<div id="main-info">
+		<div id="content">
+			<section>
+				<h1>Introducere</h1>
+				<div id="container">
+					<div id="abc">
+						<span id="C">C</span><span id="e1">e</span>  <span id="e2">e</span><span id="s">s</span><span id="t">t</span><span id="e3">e</span>   <span id="P">P</span><span id="O1">O</span><span id="O2">O</span><span id="semn">?</span>
+					</div>
+				</div>
+				<div>Programarea orientată pe obiecte, abreviată ca <b>POO</b> sau
+					<div id="tooltip"><b>OOP</b><span id="tooltiptext">Object Oriented Programming</span>
+					</div> este o paradigmă de programare, axată pe ideea grupării datelor și codului care operează asupra lor, într-o singură structură numită <b>clasă</b>.
+				</div>
+				<p>O clasă desemnează o mulțime de obiecte care împart o serie de proprietăți.</p>
+				<p><span class="ex">Exemplu:</span></p>
+				<div id="container_clase">
+					<div class="clase">
+						<img src="../imagini/water.png" title="Pepene" alt="Pepene"/>
+						<img src="../imagini/porto.png" title="Portocala" alt="Portocală" />
+						<img src="../imagini/straw.png" title="Capsuna" alt="Căpșună"/>
+						<img src="../imagini/banana.png" title="Banana" alt="Banană"/>
+						<p>clasa fruct</p>
+					</div>
+					<div class="clase">
+						<img src="../imagini/rose.png" title="Trandafir" alt="Trandafir"/>
+						<img src="../imagini/lotus.png" title="Lotus" alt="Nufăr"/>
+						<img src="../imagini/camomile.png" title="Musetel" alt="Musețel"/>
+						<img src="../imagini/lily.png" title="Crin" alt="Crin"/>
+						<p>clasa floare</p>
+					</div>
+				</div>
+				<p id="instantiere">Cum se trece de la clasă la obiect? Ce înseamnă procesul de instanțiere?</p>	
+				<p><span class="marked">Instanțierea</span> înseamnă atribuirea unor proprietăți specifice clasei, astfel încât aceasta să indice un obiect anume, care se diferențiază de toate celelalte obiecte din clasă printr-o serie de <b>atribute</b>.</p>
+				<p><span class="ex">Exemplu:</span> Dacă vom considera că "floare_galbenă" desemnează clasa tuturor florilor galbene ce conține <span class="subliniere">proprietatea </span>culoare, atribuind acesteia <span class="subliniere">valoarea </span>galben, vom crea o nouă mulțime care este o <b>subclasă</b> a clasei inițiale. Dacă vom adăuga noi și noi atribute vom individualiza clasa, astfel încât să ajungem la un caz concret, care este <b>obiectul</b>.</p>
+				<div id="subclasa">
+					<img src="../imagini/rose.png"  title="Trandafir" alt="Trandafir">
+					<img src="../imagini/lily.png"  title="Crin" alt="Crin"/>
+				</div>
+				<p>subclasa <span class="gld">floare_galbenă</span> a clasei <span class="vrd">floare</span></p>
+			</section>
+			<section>
+				<h1>Principii de bază</h1>
+				<p><img src="../imagini/green_arrow.png" title="Sageata Bullet" class="arrow" alt="Săgeată-bullet"/><span class="marked">Abstractizarea:</span> Programul poate separa anumite aspecte ale informației manipulate pentru a se concentra asupra esențialului. Fiecare obiect poate executa acțiuni și își poate modifica și comunica starea cu alte obiecte din sistem fără a dezvălui cum au fost implementate acele facilități.</p>
+				<p><img src="../imagini/green_arrow.png" title="Sageata Bullet" class="arrow" alt="Săgeată-bullet"/><span class="marked">Încapsularea</span> sau ascunderea de informații, asigură faptul că obiectele nu pot schimba starea internă a altor obiecte. Fiecare tip de obiect expune o interfață pentru celelalte obiecte care specifică modul cum acele obiecte pot interacționa cu el.</p>
+				<p><img src="../imagini/green_arrow.png" title="Sageata Bullet" class="arrow" alt="Săgeată-bullet"/><span class="marked">Polimorfismul</span>: este abilitatea de a procesa obiectele în mod diferit, în funcție de tipul sau de clasa lor. Mai exact, este abilitatea de a redefini metode pentru clasele derivate.</p>
+				<p><span class="ex">Exemplu: </span>Pentru o clasă <span class="subliniere">figură</span> putem defini o metodă arie. Dacă <span class="subliniere">cerc</span>, <span class="subliniere">dreptunghi</span> vor extinde clasa figură, fiind clase derivate, acestea pot redefini metoda arie.</p>
+				<p><img src="../imagini/green_arrow.png" title="Sageata Bullet" class="arrow" alt="Săgeată-bullet"/><span class="marked">Moștenirea: </span>permite definirea și crearea unor clase specializate plecând de la clase deja definite - acestea pot împărtăși și extinde comportamentul lor, fără a fi nevoie de a-l redefini.</p>
+				<p>O clasă moștenitoare a uneia sau mai multor clase de bază se numește <b>clasă derivată</b>.</p>
+			</section>
+			<section>
+				<h1>Relații dintre obiecte</h1>
+				<p>Între entități <small>(clase, obiecte)</small> se stabilesc legături prin care comunică între ele.</p>
+				<p><span class="ex">Exemplu: </span>Pentru exemplul cu clasa <span class="vrd">fruct</span> vom adăuga o nouă clasă <span id="brn">raft</span> care va avea următoarele proprietăți: <b>număr</b> și <b>conținut</b>. Vom particulariza clasa raft atribuind atributelor <b>număr</b> valoarea "1" și <b>conținut </b>valoarea "fructe". Aceasta înseamnă că am creat un obiect al clasei raft care este primul din magazin și conține fructe.</p>
+				<div id="fructe_expuse">
+					<img src="../imagini/water.png" title="Pepene" id="water" alt="Pepene"/>
+					<img src="../imagini/porto.png" title="Portocala" id="porto" alt="Portocală"/>
+					<img src="../imagini/straw.png" title="Capsuna" id="straw" alt="Căpșună"/>
+					<img src="../imagini/banana.png" title="Banana" id="banana" alt="Banană"/>
+					<img src="../imagini/shelf.png" title="Raft" id="shelf" alt="Raft"/>
+				</div>
+				<p>Dacă în magazin avem și fructe care trebuie păstrate la temperaturi joase, vom avea nevoie de un raft special pe care îl numim <b>raft frigorific</b> și are în plus proprietatea de răcire. Noua noastră clasă va fi o subclasă a clasei <b>raft</b>. Unul din avantajele moștenirii este acela al reutilizării codului: clasa derivată nu va mai implementa metodele clasei de bază, ci va implementa numai metodele ei specifice și va conține toate atributele ale clasei de bază. Clasa raft frigorific va avea și ea atributele "număr" și "conținut".</p>
+				<p>Clasele se comportă diferit între ele.</p>
+				<p class="ex">Exemplu:</p>
+				<p> Fie clasa <b>A</b> și clasele <b>B</b>, <b>C</b> și <b>D</b>; să presupunem ca B, C, D moștenesc pe A. Dacă A -> <span class="vrd">fruct</span>, B -> <span>portocală</span>, C -> <span>banană</span>, D -> <span>pepene</span> și <span class="vrd">fruct</span> poate implementa o subrutină pe care o vom numi "mănâncă-mă!", clasele derivate preiau toate atributele clasei <span class="vrd">fruct</span>, deci și subrutina. Dar un pepene nu se mănâncă la fel ca o portocală. Deci, subrutina trebuie sa se particularizeze pentru fiecare clasă în parte, reflectând un comportament adecvat cu proprietățile acesteia. Deci, prin polimorfism se face o moștenire selectivă.</p>
+			</section>
+			<section>
+				<h1>Elemente de bază în C++</h1>
+				<ul>
+					<li><span class="gld">Indentificatori</span> În C++ nu pot intra in alcătuirea identificatorilor spații, semne de punctuație sau simboluri. De asemenea, identificatorii nu pot incepe cu o cifră. O categorie aparte de identificatori sunt cei proprii limbajului, care se numesc cuvinte rezervate. Prin urmare, utilizatorii nu pot construi identificatori cu aceste nume.</li>
+					<li><span class="gld">Specificatorii de acces</span></li>
+				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Specificatori</th>
+							<th>În aceeași clasă</th>
+							<th>În clasă derivată</th>
+							<th>În afara clasei</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Private</td>
+							<td>Da</td>
+							<td>Nu</td>
+							<td>Nu</td>
+						</tr>
+						<tr>
+							<td>Protected</td>
+							<td>Da</td>
+							<td>Da</td>
+							<td>Nu</td>
+						</tr>
+						<tr>
+							<td>Public</td>
+							<td>Da</td>
+							<td>Da</td>
+							<td>Da</td>
+						</tr>
+					</tbody>
+					</table>
+				<ul>
+					<li><span class="gld">Sintaxa</span>
+						<img src="../imagini/syntax.png" title="Sintaxa" alt="Sintaxă"/>
+					</li>
+					<li><span class="gld">Variabile</span>
+						<img src="../imagini/variables.png" title="Variabile" alt="Variabile"/>
+					</li>
+					<li><span class="gld">Cuvinte cheie</span>
+						<img src="../imagini/keywords.png" title="Cuvinte cheie" alt="Cuvinte-cheie"/>
+					</li>
+				</ul>
+				<video controls>
+					<source src="../resurse/video.mp4" type="video/mp4">
+				</video>
+			</section>
+		</div>
+		</div>
+		</main>
+		<footer>
+		<div id="banda">
+			<div id="desc" class="footer-item">
+				<p id="title">IPOO</p>
+				<p id="pdesc">O platformă de învățare online pentru elevi.</p>
+			</div>
+			<div class="footer-item">
+				<a href="#">Începutul paginii</a>
+				<p>Contact</p>
+				<ul>
+					<li><a href="mailto:dorneanualina@yahoo.com">dorneanualina@yahoo.com</a></li>
+					<li><a href="mailto:alina-mihaela.dorneanu1@my.fmi.unibuc.ro">alina-mihaela.dorneanu1@my.fmi.unibuc.ro</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<p id="sign">Alina-Mihaela Dorneanu</p>
+				<p>studentă la <abbr title="Facultatea de Matematică și Informatică">FMI</abbr>, <abbr title="Universitatea din București">UB</abbr><br/>
+			</div>
+		</div>
+		<div id="rights">IPOO © 2020. All rights reserved.
+			<i class="fab fa-facebook-square"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-twitter-square"></i>
+		</div>
+		</footer>
+	</body>
+</html>

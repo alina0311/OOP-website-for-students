@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Acasă</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Alina Dorneanu">
+		<meta name="keywords" content="POO, OOP, programare, platformă, C++, obiect">
+		<meta name="description" content="O pagina destinata elevilor despre programarea orientata pe obiecte">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="../imagini/favicon.ico" sizes="16x16"/>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/css/css_index.css">
+	</head>
+	<body>
+		<%- include('../fragmente/header')  %>
+		
+		<main>
+			<div class="hero">
+			
+			<label for="datanasterii">Spune-ne data nasterii tale!</label>
+			<input type="text" id="datanasterii" name="datanasterii"></input><br>
+			<button id="afla">Afla cat timp a trecut de la nasterea ta!</button>
+			<div class="count">
+				<div class="countdown">
+                    <span id="years"></span>
+                    ANI
+                </div>
+				<div class="countdown">
+                    <span id="months"></span>
+                    LUNI
+                </div>
+                <div class="countdown">
+                    <span id="days"></span>
+                    ZILE
+                </div>
+
+                <div class="countdown">
+                    <span id="hours"></span>
+                    ORE
+                </div>
+
+                <div class="countdown">
+                    <span id="minutes"></span>
+                    MINUTE
+                </div>
+
+                <div class="countdown">
+                    <span id="seconds"></span>
+                    SECUNDE
+                </div>
+            </div>
+			<div id="containerRavas"></div>
+			<div id="question"><h1 id = "titluindex" class="animation">ESTI PREGATIT SA SCHIMBI LUMEA?</h1><p id="inloc"></p></div>
+					<div><a href="/teorie" class="btn btn-one"> ÎNCEPE </a></div>
+					<div><a href="#container" class="btn btn-two"> AFLĂ MAI MULTE </a></div>
+					<div><a href="/news" class="btn btn-three"> EXPLOREAZĂ</a></div>
+			<a href="#main-info"><img src="../imagini/arrow.png" title="Arrow Bullet" id="arrow" alt="Sageata_Bullet"/></a>
+			</div>
+			<div id="main-info">
+			<div id="container">
+			<section class="grid-item" id="desprenoi">
+				<h2> Despre noi </h2>
+					<p class="q"><i>Cine suntem noi?</i></p>
+					<p class="a">Suntem o echipă formată din oameni care vor să ajute persoanele care doresc sa învețe puțin din programarea orientată pe obiecte.</p>
+					<p class="q"><i>Cui se adresează această platformă?</i></p>
+					<p class="a">Platforma a fost concepută inițial în folosul elevilor, dar bineînțeles că oricine poate să se folosească de ea.</p>
+					<p class="q"><i>Ce vizează această platformă?</i></p>
+					<p class="a">Se dorește ca platforma IPOO sa fie o platformă educațională în care informațiile sa fie strânse la un loc și să fie un punct de sprijin interactiv pentru începătorii din domeniul programării.</p>
+					<p class="q"><i>De unde a venit ideea?</i></p>
+					<p class="a">Ideea a venit de la faptul că în licee nu se predă programare orientată pe obiect, ci mai ales programare procedurală, iar informațiile online pot fi uneori greu de găsit.</p>
+					<a href="/documentatie" id="doc">Documentatie</a>
+			</section>
+			<section class="grid-item" id="recomandari">
+				<h2> Recomandări de site-uri</h2>
+				<ul>
+					<li><a href="https://www.geeksforgeeks.org/"><span> Geeks for Geeks: </span>Pe acest site găsiți foarte multe probleme deja rezolvate, algoritmi bine explicați și structurați. </a></li>
+					<li><a href="https://stackoverflow.com/"> <span>Stack Overflow: </span>Un forum unde găsiți răspunsuri la întrebări. </a></li>
+					<li><a href="https://www.coursera.org/"> <span>Coursera: </span> Aici găsiți multe cursuri gratuite, ținute de profesori universitari și nu numai. </a></li>
+					<li><a href="https://github.com/"> <span>GitHub: </span>Acest site vă va ajuta să vă structurați proiectele mai bine.</a></li>
+					<li><a href="https://www.codepile.net"> <span>CodePile: </span> Dacă vreți să lucrați concomitent cu un coleg, site-ul acesta vă va fi de folos. </a></li>
+					<li><a href="https://repl.it/"> <span>Repl: </span> Pe aproape aceeași idee merge și acesta. </a></li>
+				</ul>
+				<h2> Recomandări de cărți </h2>
+				<div id="container-galerie">
+					<div id="gal">
+					<img src="../imagini/rennu.png" title="Rennu Book" id="poza1" alt="Cartea1"/>
+					<img src="../imagini/richard.jpg" title="Rirchard Book" id="poza2" alt="Cartea1"/>
+					<img src="../imagini/bjarne.jpg" title="Bjarne Book" id="poza3" alt="Cartea1"/>
+					<img src="../imagini/cookbook.jpg" title="Cook Book"id="poza4" alt="Cartea1"/>
+					<img src="../imagini/primer.jpg" title="Primer Book" id="poza5" alt="Cartea1"/>
+					</div>
+				</div>
+			</section>
+			</div>
+			<a href="/afisareJson" id="elevi">Vizualizeaza elevii</a>
+			</div>
+			
+		</main>
+		
+		<%- include('../fragmente/footer')  %>
+		<script src="js/varstaUtiliz.js"></script>
+		<script src="js/nrcuv.js"></script>
+		<script src="js/ravase.js"></script>
+		<script src="js/afisTitlu.js"></script>
+	</body>
+</html>

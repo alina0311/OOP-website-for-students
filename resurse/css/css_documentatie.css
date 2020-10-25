@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Work+Sans|Poppins|Roboto|Permanent+Marker|Nunito|Vanela+Round|Sen|Exo+2|Nunito+Sans|Righteous|Ropa+Sans|Raleway|Pacifico|Anton&display=swap');
+main div{
+	background-color:grey;
+	height:90vh;
+	padding:5rem;
+
+}
+html{
+	font-size:17px;
+}
+ul{
+	margin-top:0rem;
+	line-height:180%;
+}
+main ul li:first-of-type{
+	margin-top:2rem;
+}
+main li a{
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+}
+@media screen and (min-width:400px) and (max-width:700px){
+	h1{
+		margin-top:0rem;
+	}
+}
+@media screen and (max-width: 400px){
+	h1{
+		margin-top:7rem;
+	}
+}
